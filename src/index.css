@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@media print {
+  /* Hide non-printable app UI */
+  header,
+  nav,
+  button,
+  .no-print,
+  #export-modal-backdrop > div > div:first-child,
+  #export-modal-backdrop > div > div:nth-child(2) {
+    display: none !important;
+  }
+
+  /* Reset modal overlay for printing */
+  #export-modal-backdrop {
+    position: static !important;
+    background: transparent !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    display: block !important;
+  }
+
+  #export-modal-backdrop > div {
+    max-width: 100% !important;
+    max-height: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    background: #fff !important;
+  }
+
+  #export-modal-backdrop > div > div:last-child {
+    background: transparent !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #printable-study-document {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .print-page-break-avoid {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .print-page-break-after {
+    break-after: page !important;
+    page-break-after: always !important;
+  }
+}

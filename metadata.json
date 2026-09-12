@@ -1,0 +1,6 @@
+{
+  "name": "Study Buddy",
+  "description": "Personal AI study assistant that helps you learn deeply, retain long-term, and stay motivated through active recall, spaced repetition, and adaptive study modes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
